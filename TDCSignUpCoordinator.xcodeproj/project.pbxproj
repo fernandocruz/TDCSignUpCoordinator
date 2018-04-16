@@ -8,20 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		11DB8D5A206705FC00133D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D59206705FC00133D7C /* AppDelegate.swift */; };
-		11DB8D5C206705FC00133D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D5B206705FC00133D7C /* ViewController.swift */; };
-		11DB8D5F206705FC00133D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D5D206705FC00133D7C /* Main.storyboard */; };
 		11DB8D61206705FC00133D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D60206705FC00133D7C /* Assets.xcassets */; };
 		11DB8D64206705FC00133D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D62206705FC00133D7C /* LaunchScreen.storyboard */; };
+		11DB8D77206708D100133D7C /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D75206708D100133D7C /* OnBoardingView.swift */; };
+		11DB8D78206708D100133D7C /* OnBoardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D76206708D100133D7C /* OnBoardingView.xib */; };
+		11DB8D8020670B3000133D7C /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D7E20670B3000133D7C /* PasswordView.swift */; };
+		11DB8D8120670B3000133D7C /* PasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D7F20670B3000133D7C /* PasswordView.xib */; };
+		11DB8D8420670B5A00133D7C /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D8220670B5A00133D7C /* EmailView.swift */; };
+		11DB8D8520670B5A00133D7C /* EmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D8320670B5A00133D7C /* EmailView.xib */; };
+		11DB8D8820670B8500133D7C /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D8620670B8500133D7C /* NameView.swift */; };
+		11DB8D8920670B8500133D7C /* NameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D8720670B8500133D7C /* NameView.xib */; };
+		11DB8D8C20670BB500133D7C /* CPFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D8A20670BB500133D7C /* CPFView.swift */; };
+		11DB8D8D20670BB500133D7C /* CPFView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D8B20670BB500133D7C /* CPFView.xib */; };
+		11DB8D9020670BDF00133D7C /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D8E20670BDF00133D7C /* CountryView.swift */; };
+		11DB8D9120670BDF00133D7C /* CountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D8F20670BDF00133D7C /* CountryView.xib */; };
+		11DB8D932067246700133D7C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D922067246700133D7C /* Coordinator.swift */; };
+		11DB8D952067247900133D7C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D942067247900133D7C /* AppCoordinator.swift */; };
+		11DB8D972067249E00133D7C /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D962067249E00133D7C /* SignUpCoordinator.swift */; };
+		11DB8D99207A4E9400133D7C /* OnBoardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D98207A4E9400133D7C /* OnBoardingCoordinator.swift */; };
+		11DB8D9D207A54A600133D7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D9B207A54A600133D7C /* HomeView.swift */; };
+		11DB8D9E207A54A600133D7C /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DB8D9C207A54A600133D7C /* HomeView.xib */; };
+		11DB8DA0207A55BE00133D7C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8D9F207A55BE00133D7C /* HomeCoordinator.swift */; };
+		11DB8DA42082519300133D7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8DA32082519300133D7C /* User.swift */; };
+		11DB8DA7208254EA00133D7C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8DA6208254EA00133D7C /* UserService.swift */; };
+		11DB8DA92082552C00133D7C /* UserServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB8DA82082552C00133D7C /* UserServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11DB8D56206705FC00133D7C /* TDCSignUpCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDCSignUpCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DB8D59206705FC00133D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11DB8D5B206705FC00133D7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11DB8D5E206705FC00133D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11DB8D60206705FC00133D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11DB8D63206705FC00133D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11DB8D65206705FC00133D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DB8D75206708D100133D7C /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		11DB8D76206708D100133D7C /* OnBoardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingView.xib; sourceTree = "<group>"; };
+		11DB8D7E20670B3000133D7C /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		11DB8D7F20670B3000133D7C /* PasswordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordView.xib; sourceTree = "<group>"; };
+		11DB8D8220670B5A00133D7C /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		11DB8D8320670B5A00133D7C /* EmailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailView.xib; sourceTree = "<group>"; };
+		11DB8D8620670B8500133D7C /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		11DB8D8720670B8500133D7C /* NameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameView.xib; sourceTree = "<group>"; };
+		11DB8D8A20670BB500133D7C /* CPFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFView.swift; sourceTree = "<group>"; };
+		11DB8D8B20670BB500133D7C /* CPFView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPFView.xib; sourceTree = "<group>"; };
+		11DB8D8E20670BDF00133D7C /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		11DB8D8F20670BDF00133D7C /* CountryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryView.xib; sourceTree = "<group>"; };
+		11DB8D922067246700133D7C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		11DB8D942067247900133D7C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		11DB8D962067249E00133D7C /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		11DB8D98207A4E9400133D7C /* OnBoardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCoordinator.swift; sourceTree = "<group>"; };
+		11DB8D9B207A54A600133D7C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		11DB8D9C207A54A600133D7C /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		11DB8D9F207A55BE00133D7C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		11DB8DA32082519300133D7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		11DB8DA6208254EA00133D7C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		11DB8DA82082552C00133D7C /* UserServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +94,130 @@
 		11DB8D58206705FC00133D7C /* TDCSignUpCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				11DB8DA52082542400133D7C /* Service */,
+				11DB8DA22082516100133D7C /* Entity */,
+				11DB8D722067088100133D7C /* Coordinator */,
+				11DB8D712067087800133D7C /* Modules */,
 				11DB8D59206705FC00133D7C /* AppDelegate.swift */,
-				11DB8D5B206705FC00133D7C /* ViewController.swift */,
-				11DB8D5D206705FC00133D7C /* Main.storyboard */,
 				11DB8D60206705FC00133D7C /* Assets.xcassets */,
 				11DB8D62206705FC00133D7C /* LaunchScreen.storyboard */,
 				11DB8D65206705FC00133D7C /* Info.plist */,
 			);
 			path = TDCSignUpCoordinator;
+			sourceTree = "<group>";
+		};
+		11DB8D712067087800133D7C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D9A207A548700133D7C /* Home */,
+				11DB8D74206708A400133D7C /* SignUp */,
+				11DB8D732067089900133D7C /* OnBoarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11DB8D722067088100133D7C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D922067246700133D7C /* Coordinator.swift */,
+				11DB8D942067247900133D7C /* AppCoordinator.swift */,
+				11DB8D98207A4E9400133D7C /* OnBoardingCoordinator.swift */,
+				11DB8D962067249E00133D7C /* SignUpCoordinator.swift */,
+				11DB8D9F207A55BE00133D7C /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		11DB8D732067089900133D7C /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D75206708D100133D7C /* OnBoardingView.swift */,
+				11DB8D76206708D100133D7C /* OnBoardingView.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		11DB8D74206708A400133D7C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D7D2067099C00133D7C /* Password */,
+				11DB8D7C2067099300133D7C /* Email */,
+				11DB8D7B2067098200133D7C /* Name */,
+				11DB8D7A2067096000133D7C /* CPF */,
+				11DB8D792067093B00133D7C /* Country */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		11DB8D792067093B00133D7C /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D8E20670BDF00133D7C /* CountryView.swift */,
+				11DB8D8F20670BDF00133D7C /* CountryView.xib */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		11DB8D7A2067096000133D7C /* CPF */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D8A20670BB500133D7C /* CPFView.swift */,
+				11DB8D8B20670BB500133D7C /* CPFView.xib */,
+			);
+			path = CPF;
+			sourceTree = "<group>";
+		};
+		11DB8D7B2067098200133D7C /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D8620670B8500133D7C /* NameView.swift */,
+				11DB8D8720670B8500133D7C /* NameView.xib */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		11DB8D7C2067099300133D7C /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D8220670B5A00133D7C /* EmailView.swift */,
+				11DB8D8320670B5A00133D7C /* EmailView.xib */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		11DB8D7D2067099C00133D7C /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D7E20670B3000133D7C /* PasswordView.swift */,
+				11DB8D7F20670B3000133D7C /* PasswordView.xib */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		11DB8D9A207A548700133D7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8D9B207A54A600133D7C /* HomeView.swift */,
+				11DB8D9C207A54A600133D7C /* HomeView.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11DB8DA22082516100133D7C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8DA32082519300133D7C /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		11DB8DA52082542400133D7C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				11DB8DA6208254EA00133D7C /* UserService.swift */,
+				11DB8DA82082552C00133D7C /* UserServiceImpl.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +279,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DB8D8520670B5A00133D7C /* EmailView.xib in Resources */,
+				11DB8D8D20670BB500133D7C /* CPFView.xib in Resources */,
+				11DB8D9E207A54A600133D7C /* HomeView.xib in Resources */,
 				11DB8D64206705FC00133D7C /* LaunchScreen.storyboard in Resources */,
+				11DB8D78206708D100133D7C /* OnBoardingView.xib in Resources */,
 				11DB8D61206705FC00133D7C /* Assets.xcassets in Resources */,
-				11DB8D5F206705FC00133D7C /* Main.storyboard in Resources */,
+				11DB8D8120670B3000133D7C /* PasswordView.xib in Resources */,
+				11DB8D8920670B8500133D7C /* NameView.xib in Resources */,
+				11DB8D9120670BDF00133D7C /* CountryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +298,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11DB8D5C206705FC00133D7C /* ViewController.swift in Sources */,
+				11DB8D932067246700133D7C /* Coordinator.swift in Sources */,
 				11DB8D5A206705FC00133D7C /* AppDelegate.swift in Sources */,
+				11DB8DA92082552C00133D7C /* UserServiceImpl.swift in Sources */,
+				11DB8D8420670B5A00133D7C /* EmailView.swift in Sources */,
+				11DB8D8C20670BB500133D7C /* CPFView.swift in Sources */,
+				11DB8D8820670B8500133D7C /* NameView.swift in Sources */,
+				11DB8D8020670B3000133D7C /* PasswordView.swift in Sources */,
+				11DB8DA42082519300133D7C /* User.swift in Sources */,
+				11DB8D972067249E00133D7C /* SignUpCoordinator.swift in Sources */,
+				11DB8D952067247900133D7C /* AppCoordinator.swift in Sources */,
+				11DB8DA0207A55BE00133D7C /* HomeCoordinator.swift in Sources */,
+				11DB8D9020670BDF00133D7C /* CountryView.swift in Sources */,
+				11DB8DA7208254EA00133D7C /* UserService.swift in Sources */,
+				11DB8D9D207A54A600133D7C /* HomeView.swift in Sources */,
+				11DB8D99207A4E9400133D7C /* OnBoardingCoordinator.swift in Sources */,
+				11DB8D77206708D100133D7C /* OnBoardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11DB8D5D206705FC00133D7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11DB8D5E206705FC00133D7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11DB8D62206705FC00133D7C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
