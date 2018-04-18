@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PasswordView" customModule="TDCSignUpCoordinator" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenericView" customModule="TDCSignUpCoordinator" customModuleProvider="target">
             <connections>
-                <outlet property="passwordLabel" destination="cRw-nu-bdb" id="BfW-5E-XTo"/>
-                <outlet property="passwordTextField" destination="HLk-Ja-zFB" id="nmZ-Os-QEP"/>
+                <outlet property="GenericLabel" destination="cRw-nu-bdb" id="N8I-ZO-RTJ"/>
+                <outlet property="GenericTextField" destination="HLk-Ja-zFB" id="VP9-4b-Wo4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

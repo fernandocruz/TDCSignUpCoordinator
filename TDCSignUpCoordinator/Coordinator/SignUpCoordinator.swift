@@ -17,6 +17,14 @@ struct UserPayload {
   var name: String? = nil
 }
 
+enum Steps {
+  case country
+  case email
+  case password
+  case cpf
+  case name
+}
+
 protocol SignUpCoordinatorDelegate: class {
   func onSignUpCompleted(_ userPayload: UserPayload)
 }
@@ -27,8 +35,8 @@ class SignUpCoordinator: Coordinator {
   
   weak var delegate: SignUpCoordinatorDelegate?
   
-  var homeCoordinator: Coordinator?
   var userPayload: UserPayload?
+  var currentStep: Steps?
   
   init(navigationController: UINavigationController = UINavigationController()) {
     self.navigationController = navigationController
@@ -42,80 +50,70 @@ class SignUpCoordinator: Coordinator {
   }
   
   private func showCountryView() {
-    let view = CountryView()
+    let view = GenericView()
     view.delegate = self
+    view.currentStep = .country
     self.navigationController.pushViewController(view, animated: true)
   }
   
   private func showEmailView() {
-    let view = EmailView()
+    let view = GenericView()
     view.delegate = self
+    view.currentStep = .email
     self.navigationController.pushViewController(view, animated: true)
   }
   
   private func showPasswordView() {
-    let view = PasswordView()
+    let view = GenericView()
     view.delegate = self
+    view.currentStep = .password
     self.navigationController.pushViewController(view, animated: true)
   }
   
   private func showCPFView() {
-    let view = CPFView()
+    let view = GenericView()
     view.delegate = self
+    view.currentStep = .cpf
     self.navigationController.pushViewController(view, animated: true)
   }
   
-  private func showNameView() {
-    let view = NameView()
+  private func showNameView() {    
+    let view = GenericView()
     view.delegate = self
+    view.currentStep = .name
     self.navigationController.pushViewController(view, animated: true)
   }
   
 }
 
-extension SignUpCoordinator: CountryViewDelegate {
-  func onCountryButtonTapped(country: String) {
-    self.userPayload?.country = country
-    self.showEmailView()
-  }
-}
-
-extension SignUpCoordinator: EmailViewDelegate {
-  func onEmailButtonTapped(email: String) {
-    self.userPayload?.email = email
-    self.showPasswordView()
-  }
-}
-
-extension SignUpCoordinator: PasswordViewDelegate {
-  func onPasswordButtonTapped(password: String) {
-    self.userPayload?.password = password
-    
-    if let country = self.userPayload?.country {
-      if country == "Brasil" {
-        self.showCPFView()
-      } else {
+extension SignUpCoordinator: GenericViewDelegate {
+  func onButtonTapped(data: String, currentStep: Steps) {
+      switch currentStep {
+      case .country:
+        userPayload?.country = data
+        showEmailView()
+      case .email:
+        userPayload?.email = data
+        showPasswordView()
+      case .password:
+        userPayload?.password = data
+        if let country = self.userPayload?.country {
+          if country == "Brasil" {
+            self.showCPFView()
+          } else {
+            showNameView()
+          }
+        }
+      case .cpf:
+        userPayload?.cpf = data
         showNameView()
+      case .name:
+        userPayload?.name = data
+        guard let user = userPayload else {
+          return
+        }
+        self.delegate?.onSignUpCompleted(user)
       }
-    }
-  }
-}
-
-extension SignUpCoordinator: CPFViewDelegate {
-  func onCPFButtonTapped(cpf: String) {
-    self.userPayload?.cpf = cpf
-    self.showNameView()
-  }
-}
-
-extension SignUpCoordinator: NameViewDelegate {
-  func onNameButtonTapped(name: String) {
-    self.userPayload?.name = name
-    
-    guard let user = userPayload else {
-      return
-    }
-    self.delegate?.onSignUpCompleted(user)
   }
 }
 
